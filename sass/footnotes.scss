@@ -1,0 +1,41 @@
+$footnote-font-size: 0.9rem;
+
+.footnote-definition {
+  font-size: $footnote-font-size;
+  margin: 1rem 0px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.footnote-definition:nth-of-type(1) {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.footnote-definition:nth-of-type(1) > sup {
+  top: 2rem;
+}
+
+.footnote-definition > sup {
+  position: absolute;
+  top: 0;
+  right: calc(100% - 35px);
+  font-size: inherit;
+  line-height: inherit;
+  margin-right: 0px;
+  display: inline-block;
+}
+
+.footnote-definition > sup:after {
+  content: '.';
+}
+
+.footnote-definition > p {
+  display: inline-block;
+  margin: 0;
+}
+
+.footnote-definition > p > code {
+  font-size: $footnote-font-size;
+}
